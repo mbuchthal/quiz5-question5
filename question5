@@ -1,0 +1,9 @@
+
+function returnRandomString(arrayOfStrings) {
+  var randomString = Math.floor(Math.random() * arrayOfStrings.length);
+  if (typeof arrayOfStrings[randomString] === 'string') {
+    return arrayOfStrings[randomString];
+  } else {
+    console.log('This is not a string!');
+  }
+}
